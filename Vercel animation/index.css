@@ -1,0 +1,83 @@
+body {
+    background: #000;
+    font-family: system-ui;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: -.06em;
+    margin: 0 0 16px;
+  }
+  
+  span {
+    color: #fff;
+    display: block;
+    font-size: 100px;
+    line-height: 1.1;
+    position: relative;
+  }
+  
+  span::before {
+    animation-name: var(--animation, a);
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    background: linear-gradient(90deg, var(--start-color), var(--end-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+    font-size: 100px;
+    position: absolute;
+    inset: 0;
+    content: var(--content);
+    opacity: 1;
+  }
+  
+  @keyframes a {
+  
+    0%,
+    16.667%,
+    100% {
+      opacity: 1;
+    }
+  
+    33.333%,
+    83.333% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes a2 {
+  
+    0%,
+    100% {
+      opacity: 0;
+    }
+  
+    33.333%,
+    50% {
+      opacity: 1;
+    }
+  
+    16.667%,
+    66.667% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes a3 {
+    0%,
+    50%,
+    100% {
+      opacity: 0;
+    }
+  
+    66.667%,
+    83.333% {
+      opacity: 1;
+    }
+  }

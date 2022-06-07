@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: black;
+}
+
+button{
+    border: none;
+    outline: none;
+}
+
+.container{
+    position: relative;
+    width: 430px;
+}
+
+.whatsappBtn{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    left: 0;
+    background-color: #29a71a;
+    border-radius: 100px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: padding 0.4s width 0.3s;
+}
+
+.whatbtnimg{
+    display: block;
+    width: 55px;
+}
+
+.title{
+    color: wheat;
+    font-size: 30px;
+    letter-spacing: 5px;
+    width: 0;
+    opacity: 0;
+    margin: 0;
+    visibility: hidden;
+    transition: opacity 0.4s, 
+                visibility 0.4s, 
+                width 0.3s, 
+                margin 0.3s;
+}
+
+.whatsappBtn:hover{
+    padding: 20px 50px;
+    width: 80%;
+}
+
+.whatsappBtn:hover .title{
+    opacity: 1;
+    visibility: visible;
+    width: 213px;
+    margin-left: 0;
+}
