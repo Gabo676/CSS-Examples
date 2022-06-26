@@ -1,0 +1,49 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("assets/forest.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+@keyframes cresent {
+    0% {
+        transform: translate(-30px, 30px) scale(0.9);
+        box-shadow: none;
+    }
+    50% {
+        transform: translate(0px, 0px) scale(1.02);
+        box-shadow: 0 0 10px #ff5303, 0 0 80px 8px #ff0000;
+        background-color: #fc5c00;
+    }
+    100% {
+        transform: translate(30px, -30px) scale(0.9);
+        box-shadow: none;
+    }
+}
+
+.moon{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.moon::before {
+    content: "";
+    background-color: #fcf270;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    animation: 4s cresent linear infinite alternate;
+}

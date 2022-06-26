@@ -1,0 +1,490 @@
+body {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 41, 144, 1) 0%,
+    rgba(0, 217, 255, 1) 100%
+  );
+}
+
+svg {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+#logo-contour {
+  fill: none;
+  stroke: #a0d9f7;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: draw 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#logo-remplissage {
+  fill-opacity: 0;
+  fill: url(#gradient);
+  stroke-opacity: 0;
+  stroke: white;
+  stroke-width: 4;
+  animation: show 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#gradient {
+  background: linear-gradient(
+    to bottom,
+    rgba(234, 90, 12, 1) 0%,
+    rgba(255, 217, 0, 1) 51%,
+    rgba(234, 90, 12, 1) 100%
+  );
+}
+#contours {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 5000;
+  stroke-dashoffset: 5000;
+  animation: draw 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#details {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 5000;
+  stroke-dashoffset: 5000;
+  animation: draw 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#details-back {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#traces-back {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#grille {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#ventilation {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#ligne-back {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#remplissage-back {
+  fill-opacity: 0;
+  fill: white;
+  animation: show 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#porte {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: draw 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#sup {
+  fill-opacity: 0;
+  fill: white;
+  animation: show 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#down {
+  fill-opacity: 0;
+  fill: white;
+  animation: show 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#car-back {
+  fill-opacity: 0;
+  fill: white;
+  animation: show 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#details-sup {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#poignee {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: draw 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#serrure {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: draw 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#combustible {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#remplissage {
+  fill-opacity: 0;
+  fill: white;
+  animation: show 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#roues {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#phare {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: draw 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#phare-remplissage {
+  fill-opacity: 0;
+  fill: white;
+  animation: show 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#fenetre {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#fenetre-1 {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#fenetre-2 {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#retro {
+  fill-opacity: 0;
+  fill: white;
+  animation: show 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#caisson-cables {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#bandeau {
+  fill-opacity: 0;
+  fill: white;
+  animation: show 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#bloc-1 {
+  fill-opacity: 0;
+  fill: white;
+  animation: show 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#bloc-2 {
+  fill-opacity: 0;
+  fill: white;
+  animation: show 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#cables {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 6;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#barre {
+  fill-opacity: 0;
+  fill: white;
+  animation: show 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#details-barre {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: draw 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#poignee {
+  fill-opacity: 0;
+  fill: white;
+  animation: show 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#bande-1 {
+  fill-opacity: 0;
+  fill: white;
+  animation: show 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#accroche {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: draw 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#ronds {
+  fill-opacity: 0;
+  fill: white;
+  stroke: none;
+  animation: show 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#roue-details_1 {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#roue-details {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  to {
+    fill-opacity: 1;
+    opacity: 1;
+    stroke-opacity: 1;
+  }
+}
